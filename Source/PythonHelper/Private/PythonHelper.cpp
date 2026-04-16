@@ -1,4 +1,4 @@
-﻿// Copyright 2022 Xinin Zeng (DreamingPoet). All Rights Reserved.
+// Copyright 2022 Xinin Zeng (DreamingPoet). All Rights Reserved.
 
 #include "PythonHelper.h"
 #include "PythonHelperStyle.h"
@@ -318,6 +318,11 @@ void FPythonHelperModule::GenerateFunctions(const FString Code, const FString Pa
 
 	for (auto Func : Functions)
 	{
+		if (Func.Key.StartsWith(TEXT("_")))
+		{
+			continue;
+		}
+
 		bool bCommented = false;
 		for (auto i : Comments)
 		{
