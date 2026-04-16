@@ -434,17 +434,12 @@ void FPythonHelperModule::TimerCall(bool bForceEndChange /*= false*/)
 		{
 			CurrentItem->MD5 = TempMD5;
 			GenerateFunctions(Code, *CurrentItem->Path);
-#if PY_MAJOR_VERSION < 3
 
-			// python2 ,  directly reload()
-			FString reload = "reload(" + FPythonHelperModule::GetFilePathCharater(*CurrentItem->Path) + ")";
-			IPythonScriptPlugin::Get()->ExecPythonCommand(*reload);
-#else
 			FString reimport = "import importlib";
 			IPythonScriptPlugin::Get()->ExecPythonCommand(*reimport);
 			FString reload = "importlib.reload(" + FPythonHelperModule::GetFilePathCharater(*CurrentItem->Path) + ")";
 			IPythonScriptPlugin::Get()->ExecPythonCommand(*reload);
-#endif
+
 		}
 	}
 	//UE_LOG(LogPythonHelper, Log, TEXT("TimerCall..."));
