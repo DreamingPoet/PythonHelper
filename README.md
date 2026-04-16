@@ -2,7 +2,7 @@
 An Unreal Engine plugin that allows you to execute custom editor scripts with a single click.
 
 
-![image](https://user-images.githubusercontent.com/51103322/156311339-46f9884d-e7d6-4ae5-80d2-afe4d1e3e178.png)
+![image](https://github.com/user-attachments/assets/9e453bc3-026b-46a1-8872-4ad14a30d2fe)
 
 ## Features
 1. This plug-in provides an "unreallib.py" module, which contains a complete UnrealEngine Python API. When you use it in text editors such as VS Code, you will get intelligent code prompt, function parameter prompt, return value type inference, comments, etc. you can also jump to the function in the module to view the detailed function definition.
@@ -20,25 +20,12 @@ Note: when "import" a module for the first time or  through "importlib.reload ()
 
 ## Startup
 
-1. Enable the following plugins  
-
-![image](https://user-images.githubusercontent.com/51103322/156296082-814070dd-7dfc-4b28-b839-36abf0527e3d.png)  
-
-2. Set Additional Path( ProjectDir/Python ) for Python Scripts, you don't have to do this in UnrealEngine 4.27  
-
-![image](https://user-images.githubusercontent.com/51103322/156295647-bccef012-1d44-4889-866c-cfe28caeecd0.png)  
-
-3. Open PythonHelper Tab( MainMenu -> Window -> PythonHelper)  
+1. Open PythonHelper Tab( MainMenu -> Window -> PythonHelper)  
 
 ![screenshot-20220302-132219](https://user-images.githubusercontent.com/51103322/156300572-9694e6fe-98d8-479f-b504-d3b2b29474fd.png)  
 
 ## Known Issue
 
-1. In version 4.25,  file in the subdirectory of "$ProjectDir$/ Python" cannot call functions, but you can run the file directly.
-
-2. In version 4.25, file named in "test.py" cannot call functions, but it can be executed directly.
-
-3. Chinese directory and Chinese file name are not supported.
 
 
 
@@ -46,19 +33,11 @@ Note: when "import" a module for the first time or  through "importlib.reload ()
 
 ## 中文
 
-本插件只能在编辑器模式下使用
+一键执行编辑器 Python 脚本
 
 ## 设置
 
-1. 需要开启以下插件  
-
-![image](https://user-images.githubusercontent.com/51103322/156296082-814070dd-7dfc-4b28-b839-36abf0527e3d.png)  
-
-2. 设置python脚本的附加路径( $ProjectDir$/Python ) ,UE4.27版本可以不用设置
-
-![image](https://user-images.githubusercontent.com/51103322/156295647-bccef012-1d44-4889-866c-cfe28caeecd0.png)  
-
-3. 打开面板( 主菜单 -> Window -> PythonHelper)  
+1. 打开面板( 主菜单 -> Window -> PythonHelper)  
 
 ![screenshot-20220302-132219](https://user-images.githubusercontent.com/51103322/156300572-9694e6fe-98d8-479f-b504-d3b2b29474fd.png)  
 
@@ -77,9 +56,3 @@ Note: when "import" a module for the first time or  through "importlib.reload ()
 6. 当面板关闭的时候，所有的自动检测将会关闭，直到重新打开面板
 
 ## 已知问题
-
-1. 4.25版本中， $ProjectDir/Python$ 子目录下的 python 文件无法调用函数，但是可以直接运行该文件。
-
-2. 4.25版本中 test.py 文件无法调用函数，但是可以直接执行该文件
-
-3. 不支持中文目录和中文文件名
