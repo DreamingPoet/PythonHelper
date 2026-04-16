@@ -1,0 +1,7 @@
+Binaries/
+Build/
+Intermediate/
+Tools/*/unreal_html/
+Tools/*/temp_py/
+PythonApi.txt
+*.pyc
