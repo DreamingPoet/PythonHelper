@@ -4,8 +4,10 @@ An Unreal Engine plugin that allows you to execute custom editor scripts with a 
 
 ![image](https://github.com/user-attachments/assets/9e453bc3-026b-46a1-8872-4ad14a30d2fe)
 
+Fab Store: https://www.fab.com/listings/d85485bc-46d8-4201-9aec-5b99965c3a29
+
 ## Features
-1. This plug-in provides an "unreallib.py" module, which contains a complete UnrealEngine Python API. When you use it in text editors such as VS Code, you will get intelligent code prompt, function parameter prompt, return value type inference, comments, etc. you can also jump to the function in the module to view the detailed function definition.
+1. This plug-in provides an "unreallib.py" module（Only Fab Store Version）, which contains a complete UnrealEngine Python API. When you use it in text editors such as VS Code, you will get intelligent code prompt, function parameter prompt, return value type inference, comments, etc. you can also jump to the function in the module to view the detailed function definition.
 
 2. Automatically detect all Python files in the "$ProjectDir$/ Python" directory and run the file by clicking a button.
 
@@ -31,6 +33,7 @@ Note: when "import" a module for the first time or  through "importlib.reload ()
 
 
 
+
 ## 中文
 
 一键执行编辑器 Python 脚本
@@ -43,7 +46,7 @@ Note: when "import" a module for the first time or  through "importlib.reload ()
 
 ## 插件功能
 
-1. 本插件提供一个 unreallib.py 模块，模块中包含了完整的 UnrealEngine Python API, 当你在VS Code 等编辑器中使用的时候，将获得智能代码提示，函数参数提示，返回值类型推断，注释等，也能跳转到模块中的函数，查看详细的函数定义。
+1. 本插件提供一个 unreallib.py 模块（仅商城版提供），模块中包含了完整的 UnrealEngine Python API, 当你在VS Code 等编辑器中使用的时候，将获得智能代码提示，函数参数提示，返回值类型推断，注释等，也能跳转到模块中的函数，查看详细的函数定义。
 
 2. 自动检测 "$ProjectDir$/ Python" 目录下的所有 python 文件，通过点击按钮运行该文件
 
@@ -56,3 +59,5 @@ Note: when "import" a module for the first time or  through "importlib.reload ()
 6. 当面板关闭的时候，所有的自动检测将会关闭，直到重新打开面板
 
 ## 已知问题
+
+
